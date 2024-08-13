@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fan Theme</title>
+    <style>
+      input {
+        display: none;
+      }
+      .box {
+        height: 500px;
+        width: 500px;
+        background-color: white;
+
+        padding: 5px;
+        position: relative;
+        top: 30%;
+        left: 30%;
+      }
+      .fan {
+        height: 100px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .fan img {
+        height: 200px;
+        width: 200px;
+      }
+      .box .controls {
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        display: flex;
+
+        position: absolute;
+        top: 80%;
+        left: 8%;
+      }
+      .box .controls .controls-menu {
+        background-color: rgba(128, 128, 128, 0.286);
+        border-radius: 30%;
+        font-size: x-large;
+        font-weight: 900;
+        padding: 12px;
+        transition: all 180ms;
+      }
+      .box .controls .controls-menu:hover
+      {
+        background-color:black;
+        color: white;
+
+      }
+
+      #fanoff {
+        position: absolute;
+        top: 25%;
+        left: 40%;
+        transition: all 300ms;
+        animation: off 10s linear infinite;
+      }
+
+      #fanon {
+        position: absolute;
+        top: 25%;
+        left: 40%;
+        transition: all 300ms;
+        animation: on 1800ms linear infinite;
+      }
+      #fanone {
+        position: absolute;
+        top: 25%;
+        left: 40%;
+        transition: all 300ms;
+        animation: one 1200ms linear infinite;
+      }
+      #fantwo {
+        position: absolute;
+        top: 25%;
+        left: 40%;
+        transition: all 300ms;
+        animation: two 700ms linear infinite;
+      }
+      #fanthree {
+        position: absolute;
+        top: 25%;
+        left: 40%;
+        transition: all 300ms;
+        animation: three 400ms linear infinite;
+      }
+      #fanfour {
+        position: absolute;
+        top: 25%;
+        left: 40%;
+        transition: all 300ms;
+        animation: four 100ms linear infinite;
+      }
+      #fanfive {
+        position: absolute;
+        top: 25%;
+        left: 40%;
+        transition: all 300ms;
+        animation: five 10ms linear infinite;
+      }
+      @keyframes off {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+
+      @keyframes on {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes one {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes two {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes three {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes four {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes five {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      #off:checked + #fanoff {
+        z-index: 1;
+      }
+      #on:checked + #fanon {
+        z-index: 1;
+      }
+      #one:checked + #fanone {
+        z-index: 1;
+      }
+      #two:checked + #fantwo {
+        z-index: 1;
+      }
+      #three:checked + #fanthree {
+        z-index: 1;
+      }
+      #four:checked + #fanfour {
+        z-index: 1;
+      }
+      #five:checked + #fanfive {
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <input type="radio" name="fan" id="off"  checked/>
+      <div class="fan" id="fanoff">
+        <img
+          src="https://m.media-amazon.com/images/I/5194AMsT9JL.SS700.jpg"
+          alt=""
+        />
+      </div>
+
+      <input type="radio" name="fan" id="on" />
+      <div class="fan" id="fanon">
+        <img
+          src="https://m.media-amazon.com/images/I/5194AMsT9JL.SS700.jpg"
+          alt=""
+        />
+      </div>
+
+      <input type="radio" name="fan" id="one" />
+      <div class="fan" id="fanone">
+        <img
+          src="https://m.media-amazon.com/images/I/5194AMsT9JL.SS700.jpg"
+          alt=""
+        />
+      </div>
+
+      <input type="radio" name="fan" id="two" />
+      <div class="fan" id="fantwo">
+        <img
+          src="https://m.media-amazon.com/images/I/5194AMsT9JL.SS700.jpg"
+          alt=""
+        />
+        
+      </div>
+      <input type="radio" name="fan" id="three" />
+      <div class="fan" id="fanthree">
+        <img
+          src="https://m.media-amazon.com/images/I/5194AMsT9JL.SS700.jpg"
+          alt=""
+        />
+      </div>
+
+      <input type="radio" name="fan" id="four" />
+      <div class="fan" id="fanfour">
+        <img
+          src="https://m.media-amazon.com/images/I/5194AMsT9JL.SS700.jpg"
+          alt=""
+        />
+      </div>
+
+      <input type="radio" name="fan" id="five" />
+      <div class="fan" id="fanfive">
+        <img
+          src="https://m.media-amazon.com/images/I/5194AMsT9JL.SS700.jpg"
+          alt=""
+        />
+      </div>
+      <div class="controls">
+        <label for="off"><div class="controls-menu">   OFF </div></label>
+        <label for="on"> <div class="controls-menu">    ON  </div></label>
+        <label for="one">  <div class="controls-menu">  1   </div></label>
+        <label for="two">  <div class="controls-menu">  2   </div></label>
+        <label for="three"><div class="controls-menu">  3   </div></label>
+        <label for="four"> <div class="controls-menu">  4   </div></label>
+        <label for="five"> <div class="controls-menu">  5   </div></label>
+      </div>
+    </div>
+  </body>  
+</html>
